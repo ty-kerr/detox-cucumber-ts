@@ -44,5 +44,13 @@ module.exports = {
             },
         ],
     },
-    ignorePatterns: ['node_modules', 'babel.config.js', 'metro.config.js', '**/*.js'],
+    ignorePatterns: ['node_modules', 'babel.config.js', 'metro.config.js', 'cucumber.js'],
+    overrides: [
+        {
+            files: ['e2e/features/steps/*.js'],
+            rules: {
+                'prefer-arrow-callback': 'off',
+            },
+        },
+    ],
 }
