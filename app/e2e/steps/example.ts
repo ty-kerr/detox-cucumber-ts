@@ -1,4 +1,4 @@
-import { expect, element } from 'detox'
+import { expect, element, by } from 'detox'
 import { Given, Then } from '@cucumber/cucumber'
 
 Given('I should see the {string} element', async function (testID) {
